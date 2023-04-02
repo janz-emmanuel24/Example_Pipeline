@@ -1,4 +1,4 @@
 FROM node:alpine
 WORKDIR /app
+CMD which git
 ADD . .
-RUN apk add -U git curl
