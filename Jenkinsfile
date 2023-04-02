@@ -10,5 +10,10 @@ pipeline {
                 sh 'node --version'
             }
         }
+        stage('Build') {
+            steps {
+                sh 'docker images'
+            }
+        }
     }
 }
